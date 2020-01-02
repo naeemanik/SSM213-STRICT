@@ -1,0 +1,390 @@
+ /* Global CSS Start */
+ *{
+    margin: 0;
+    /* padding: 0; */
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.col-1{
+    width: 8.33%;
+    float: left;
+}
+.col-2{
+    width:16.67% ;
+    float: left;
+}
+.col-3{
+    width:25% ;
+    float: left;
+}
+.col-4{
+    width:33.33% ;
+    float: left;
+}
+.col-5{
+    width:41.67% ;
+    float: left;
+}
+.col-6{
+    width:50% ;
+    float: left;
+}
+.col-7{
+    width: 58.33%;
+    float: left;
+}
+.col-8{
+    width: 65.57%;
+    float: left;
+}
+.col-9{
+    width:75% ;
+    float: left;
+}
+.col-10{
+    width:83.33% ;
+    float: left;
+}
+.col-11{
+    width:91.67% ;
+    float: left;
+}
+.col-12{
+    width: 100%;
+    float: left;
+}
+
+.row{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+section{
+    float:left;
+    width: 100%;
+}
+
+/* Global CSS End */
+
+/* Topbar CSS Start */
+.topbar{
+    background: #f6f9f9;
+    height: 70px;
+}
+
+.topbar .logo {
+    padding: 20px 0;
+}
+/* Topbar CSS End */
+
+/* Banner CSS Start */
+.banner{
+ background: url(../picture/banner-bg.png);
+ height: 700px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ position: relative;
+}
+.banner-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.banner h1{
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.banner .blue-line{
+    width: 40%;
+    height: 3px;
+    background: #15a4fa;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.banner p{
+
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner .highlight{
+
+text-transform: uppercase;
+font-size: 20px;
+}
+.banner .btn-cta{
+
+text-decoration: none;
+
+color: white;
+
+border: 1px solid #15a4fa;
+
+display: block;
+
+width: 15%;
+
+text-align: center;
+
+margin: 0 auto;
+
+padding: 13px 0;
+
+position: relative;
+}
+
+.banner .btn-cta::before{
+    content:" ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #15a4fa;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner .btn-cta::after{
+    content:" ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #15a4fa;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.banner .btn-cta:hover::before{
+    
+    transition: .8s ;
+    width: 51%;
+}
+
+.banner .btn-cta:hover::after{
+    
+    transition: .8s ;
+    width: 50%;
+}
+
+/* Banner CSS End */
+
+/* Typo Css start */
+.typo{
+    padding: 80px 0;
+    background: #f6f9f9;
+    /* height: 196px; */
+}
+.typo h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3950;
+}
+.typo p{
+    line-height: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #999;
+}
+
+/* typo CSS End */
+
+/* Feature CSS Start */
+.feature{
+    padding: 80px 0;
+}
+.feature .icon{
+    margin-bottom: 15px;
+}
+.feature h3{
+    color: #2d3950;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.feature p{
+    color: #999;
+    font-size: 15px;
+    padding: 0 35px;
+}
+/* Feature CSS End */
+
+/* Portfolio CSS Start */
+.portfolio{
+     padding: 80px 0;
+     background: #f6f9f9;
+}
+.portfolio h2{
+
+    font-size: 40px;
+    color: #2d3950;
+}
+.portfolio p{ 
+    font-size: 15px; 
+    color: #909090; 
+    margin: 20px 0 50px;
+}
+
+.portfolio img{
+    width: 100%;
+}
+.portfolio .inner-box{
+    position: relative;
+    margin: 10px;
+}
+.box-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #1d9ced;
+    opacity: 0;
+    transition: 1s;
+}
+.box-hover:hover{
+    opacity: 0.8;
+}
+/* Portfolio CSS End */
+
+/* Contact CSS Start */
+.contact{
+    background:linear-gradient(rgba(45, 57, 80, 0.8),rgba(45, 57, 80, 0.8)), url(../picture/footer-bg.png);
+    height: 600px;
+    background: cover;
+    background-position: center;
+    background: cover;
+    opacity: 0.7;
+}
+.contact h2{
+
+font-size: 40px;
+
+text-align: center;
+
+color: #fff;
+
+margin: 40px 0 15px;
+}
+.contact p{
+
+font-size: 15px;
+
+color: #999;
+
+text-align: center;
+
+margin-bottom: 20px;
+}
+
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+.contact .form-input{
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid white;
+    padding:15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type=checkbox]{
+
+margin-right: 10px;
+}
+
+form .checkbox{
+
+display: inline-block;
+
+color: white;
+}
+.contact .btn{
+   
+    color: #ffffff;
+    border: 1px solid #15a4fa;
+    text-align: center;
+    padding: 10px 40px;
+    position: relative;
+    background: transparent;
+    float: right;
+    
+}
+
+.contact .btn::before{
+    content:" ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #15a4fa;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contact .btn::after{
+    content:" ";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #15a4fa;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact .btn:hover::before{
+    
+    transition: .8s ;
+    width: 51%;
+}
+
+.contact .btn:hover::after{
+    
+    transition: .8s ;
+    width: 50%;
+}
+
+
+
+/* Contact CSS End */
+
+/* Footer CSS Start */
+footer{
+
+width: 100%;
+float: left;
+padding: 25PX 0;
+background: #f6f9f9;
+}
+footer h3{
+    font-size: 15px;
+    color: #999;
+
+}
+
+footer .social-icon{
+    float: right;
+}
+
+footer .social-icon a{background: #15a4fa;display: inline-block;width: 30px;height: 30px;text-align: center;line-height: 2;color: white;}
+
+/* Footer CSS End */
